@@ -59,7 +59,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "28ef99026d28c14e6e8d"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "340f091c0fbb6d23e9f5"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
@@ -700,7 +700,7 @@
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "C:\\xampp\\htdocs\\wall-theme\\assets";
+/******/ 	__webpack_require__.p = "C:\\xampp\\htdocs\\wall-memory\\assets";
 /******/
 /******/ 	// __webpack_hash__
 /******/ 	__webpack_require__.h = function() { return hotCurrentHash; };
@@ -913,43 +913,48 @@ module.exports = Html5Entities;
 
 
 $(document).ready(function () {
-        var swiper = new Swiper('.swiper-container', {
-                slidesPerView: 'auto',
-                centeredSlides: false,
-                spaceBetween: 30,
-                loop: true,
-                navigation: {
-                        nextEl: '.swiper-button-next'
-                }
-        });
+    var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 'auto',
+        centeredSlides: false,
+        spaceBetween: 30,
+        loop: true,
+        navigation: {
+            nextEl: '.swiper-button-next'
+        }
+    });
 
-        (function () {
+    (function () {
 
-                var youtube = document.querySelectorAll(".youtube");
+        var youtube = document.querySelectorAll(".youtube");
 
-                for (var i = 0; i < youtube.length; i++) {
+        for (var i = 0; i < youtube.length; i++) {
 
-                        var source = "./assets/images/video.jpg";
+            var source = "./assets/images/video.jpg";
 
-                        var image = new Image();
-                        image.src = source;
-                        image.addEventListener("load", function () {
-                                youtube[i].appendChild(image);
-                        }(i));
+            var image = new Image();
+            image.src = source;
+            image.addEventListener("load", function () {
+                youtube[i].appendChild(image);
+            }(i));
 
-                        youtube[i].addEventListener("click", function () {
+            youtube[i].addEventListener("click", function () {
 
-                                var iframe = document.createElement("iframe");
+                var iframe = document.createElement("iframe");
 
-                                iframe.setAttribute("frameborder", "0");
-                                iframe.setAttribute("allowfullscreen", "");
-                                iframe.setAttribute("src", "https://www.youtube.com/embed/" + this.dataset.embed + "?rel=0&showinfo=0&autoplay=1");
+                iframe.setAttribute("frameborder", "0");
+                iframe.setAttribute("allowfullscreen", "");
+                iframe.setAttribute("src", "https://www.youtube.com/embed/" + this.dataset.embed + "?rel=0&showinfo=0&autoplay=1");
 
-                                this.innerHTML = "";
-                                this.appendChild(iframe);
-                        });
-                };
-        })();
+                this.innerHTML = "";
+                this.appendChild(iframe);
+            });
+        };
+    })();
+
+    $('.map-info-content-name').click(function (e) {
+        $(this).toggleClass('active');
+        $(this).parent().find('.map-info-content-list').slideToggle();
+    });
 });
 
 /***/ }),

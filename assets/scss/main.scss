@@ -382,6 +382,117 @@ a.news-block-item:hover .news-block-item-link {
     margin: 15px 0 10px;
 }
 
+.page-map-block{
+    position: relative;
+}
+
+.map-info {
+    z-index: 1;
+    position: absolute;
+    top: 160px;
+    left: calc((100% - 1230px) / 2);
+    background-color: #fff;
+    width: 295px;
+    padding: 24px 9px 24px 0;
+    border: 1px solid #d0d0d0;
+    box-shadow: 0px 0px 51px 0px rgba(109, 109, 109, 0.5);
+    border-radius: 4px;
+    overflow: hidden;
+}
+.map-info-content {
+    max-height: 645px;
+    overflow: auto;
+}
+
+.map-info-content::-webkit-scrollbar {
+    width: 3px;
+    height: 3px;
+}
+
+.map-info-content::-webkit-scrollbar-button {
+    width: 0px;
+    height: 0px;
+}
+
+.map-info-content::-webkit-scrollbar-thumb {
+    background: #d35b54;
+    border: 0px none #ffffff;
+    border-radius: 0px;
+}
+
+.map-info-content::-webkit-scrollbar-thumb:hover {
+    background: #d35b54;
+}
+
+.map-info-content::-webkit-scrollbar-thumb:active {
+    background: #d35b54;
+}
+
+.map-info-content::-webkit-scrollbar-track {
+    background: #d2d2d2;
+    border: 0px none #ffffff;
+    border-radius: 100px;
+}
+
+.map-info-content::-webkit-scrollbar-track:hover {
+    background: #d2d2d2;
+}
+
+.map-info-content::-webkit-scrollbar-track:active {
+    background: #d2d2d2;
+}
+
+.map-info-content::-webkit-scrollbar-corner {
+    background: transparent;
+}
+
+.map-info-content-name {
+  font-size: 16px;
+  font-family: "Open Sans";
+  font-weight: 600;
+  color: rgb(27, 27, 27);
+  text-transform: uppercase; 
+  background-color: #f3f3f3;
+  background-image: url(../images/marker.png);
+  background-repeat: no-repeat;
+  background-position: 23px 50%; 
+  padding: 10px 25px 10px 49px;
+  position: relative;
+}
+.map-info-content-name:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: calc(50% - 7px);
+    right: 10px;
+    background-image: url(../images/map-list-arrow.png);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    width: 9px;
+    height: 14px;
+}
+.map-info-content-name.active:after {
+    transform: rotate(-90deg);
+}
+.map-info-content-list{
+    list-style: none;
+    padding: 15px 0;
+    margin: 0;
+    display: none;
+}
+.map-info-content-list li{
+    margin-bottom: 20px;
+}
+.map-info-content-list li:last-child{
+    margin-bottom: 0;
+}
+.map-info-content-list li a{
+    font-size: 15px;
+    color: #050708;
+    padding: 15px 25px 15px 49px;
+    text-decoration: none;
+    font-family: "Open Sans";
+}
 @import 'pages/home';
 @import 'components/buttons';
 @import 'layout/header';

@@ -1,14 +1,12 @@
-.main-header{
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	padding: 15px 0;
-	background: rgb(210,210,210);
-	background: -webkit-linear-gradient(rgba(210,210,210,1) 0%, rgba(255,255,255,0) 100%);
-	background: -o-linear-gradient(rgba(210,210,210,1) 0%, rgba(255,255,255,0) 100%);
-	background: linear-gradient(rgba(210,210,210,1) 0%, rgba(255,255,255,0) 100%);
+.main-header {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding: 15px 0;
+    background: #d2d2d2;
+    background: linear-gradient(#d2d2d2 0%, rgba(255,255,255,0) 100%);
+    z-index: 1;
 }
 .main-header-top-menu {
     text-align: right;

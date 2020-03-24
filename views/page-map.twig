@@ -1,0 +1,23 @@
+{% include "partials/header.twig" %}
+<main class='main-content' id="app">
+    <div class="page-map-block">
+        <div class="map-content">
+            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A5cfd2eb3d1a616740d385cf263c7c30f054ea6bc3818efc672766f5004fc7824&amp;width=100%25&amp;height=900&amp;lang=ru_RU&amp;scroll=true"></script>
+        </div>
+        <div class="map-info">
+            <div class="map-info-content">
+            	{% for item in 0..7 %}
+                <div class="map-info-content-item">
+                    <div class="map-info-content-name">Орехово-Зуево</div>
+                    <ul class="map-info-content-list">
+                    	{% for item in 0..7 %}
+                        <li><a href="">Пальто</a></li>
+                        {% endfor %}
+                    </ul>
+                </div>
+				{% endfor %}
+            </div>
+        </div>
+    </div>
+</main>
+{% include "partials/footer.twig" %}
