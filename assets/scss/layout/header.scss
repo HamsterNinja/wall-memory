@@ -1,0 +1,61 @@
+.main-header{
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding: 15px 0;
+	background: rgb(210,210,210);
+	background: -webkit-linear-gradient(rgba(210,210,210,1) 0%, rgba(255,255,255,0) 100%);
+	background: -o-linear-gradient(rgba(210,210,210,1) 0%, rgba(255,255,255,0) 100%);
+	background: linear-gradient(rgba(210,210,210,1) 0%, rgba(255,255,255,0) 100%);
+}
+.main-header-top-menu {
+    text-align: right;
+    background-image: url(../images/dots.png);
+    background-repeat: no-repeat;
+    background-position: calc(100% - 325px) 50%;
+}
+.main-header-top-menu ul li{
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 24px;
+}
+.main-header-top-menu ul li a {
+  font-size: 12px;
+  font-family: "Open Sans";
+  color: rgb(157, 51, 45);
+  line-height: 2;
+  text-decoration: none;
+}
+.main-header-bottom .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.main-header-logo {
+    margin-right: 40px;
+}
+
+.main-header-store {
+    width: 140px;
+}
+
+.main-header-bottom-menu {
+    text-align: right;
+    width: calc(100% - 335px);
+}
+.main-header-bottom-menu ul li{
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 24px;
+}
+.main-header-bottom-menu ul li a {
+  font-size: 18px;
+  color: rgb(44, 0, 1);
+  text-transform: uppercase;
+  line-height: 1.333;
+  text-decoration: none;
+}

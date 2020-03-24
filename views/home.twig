@@ -1,0 +1,70 @@
+{% include "partials/header.twig" %}
+<main class='main-content' id="app">
+<div class="main-banner">
+
+	<div class="main-banner-left">
+		<div class="main-banner-title"><h1>Стены памяти</h1></div>
+		<div class="main-banner-text">
+			<p>Проект посвещенный культурного наследия страны. Архитектурное наследие которое сохранилось по нынешний день и имеет большую историческую ценность</p>
+		</div>
+		<div class="main-banner-link"><a href="">Открыть карту</a></div>
+		<div class="mouse"></div>
+	</div>
+	<div class="main-banner-right">
+		<div class="swiper-container">
+    <div class="swiper-wrapper">
+    	{% for item in 0..9 %}
+      <a href="" class="swiper-slide">
+      	<div class="swiper-slide-image">
+      		<img src="./assets/images/slide.jpg" alt="">
+		</div>
+		<div class="swiper-slide-info">
+			<div class="slide-info-name">ТЦ Никольский</div>
+			<div class="slide-info-city">г. Орехово-Зуево</div>
+		</div>
+      </a>
+      {% endfor %}
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-button-next"><img src="./assets/images/swipe-arrow.png" alt=""></div>
+  </div>
+	</div>
+
+</div>
+<div class="about-project_block">
+	<div class="container">
+		<hr class="title-decore">
+		<div class="about-project-title"><h2>проект "Стены памяти"</h2></div>
+		<div class="video-block youtube" data-embed="">
+	        <div class="play-button">
+	            <img src="./assets/images/play.png" alt="">
+	        </div> 
+    	</div>
+    	<div class="about-project-text">
+    		<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.</p>
+    	</div>
+    	<div class="about-project-link"><a href="">Читать больше о проекте</a></div>
+	</div>
+</div>
+<div class="news-block">
+	<div class="container">
+		<hr class="title-decore">
+		<div class="news-block-title">Новости</div>
+
+		<div class="news-block-content">
+			{% for item in 0..3 %}
+			<a class="news-block-item" href="">
+				<div class="news-block-item-inner">
+					<div class="news-block-item-img"><img src="./assets/images/news.jpg" alt=""></div>
+					<div class="news-block-item-title">Название новости</div>
+					<div class="news-decore">...</div>
+					<div class="news-block-item-text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis</div>
+					<div class="news-block-item-link">Подробнее</div>
+				</div>
+			</a>
+			{% endfor %}
+		</div>
+	</div>
+</div>
+</main>
+{% include "partials/footer.twig" %}
