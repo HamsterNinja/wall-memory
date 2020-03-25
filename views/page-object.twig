@@ -1,0 +1,52 @@
+{% include "partials/header.twig" %}
+<main class='main-content' id="app">
+    <div class="page-object-block">
+    	<div class="page-object-block-header">
+	        <div class="container">
+	        	<div class="page-object-title"><h1>ТЦ НИКОЛЬСКИЙ</h1></div>
+	        </div>
+        </div>
+        <div class="page-object-content">
+        	<div class="container-2">	
+	            <img src="./assets/images/photo.jpg" alt="">
+	            <h2>Дом быта на улице Ленина</h2>
+	            <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio.</p>
+	            <h2>Строительство</h2>
+	            <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio.</p>
+	            <div class="video-block youtube" data-embed="">
+	                <div class="play-button">
+	                    <img src="./assets/images/yt_play.png" alt="">
+	                </div> 
+	            </div>
+	            <h2>Как все начиналось</h2>
+	            <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.</p>
+	            <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a</p>
+        	</div>
+        </div>
+        <div class="places-nearby">
+        	<div class="container">
+        		<div class="places-nearby-title"><span>Места рядом</span></div>
+        		<div class="places-nearby-content">
+        			<div class="swiper-container">
+					    <div class="swiper-wrapper">
+					    	{% for item in 0..9 %}
+					      <a href="" class="swiper-slide">
+					      	<div class="swiper-slide-image">
+					      		<img src="./assets/images/slide.jpg" alt="">
+							</div>
+							<div class="swiper-slide-info">
+								<div class="slide-info-name">ТЦ Никольский</div>
+								<div class="slide-info-city">г. Орехово-Зуево</div>
+							</div>
+					      </a>
+					      {% endfor %}
+					    </div>
+					    <!-- Add Pagination -->
+					    <div class="swiper-button-next"><img src="./assets/images/swipe-arrow.png" alt=""></div>
+					</div>
+        		</div>
+        	</div>
+        </div>
+    </div>
+</main>
+{% include "partials/footer.twig" %}

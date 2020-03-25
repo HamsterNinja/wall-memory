@@ -62,7 +62,12 @@ img {
 	padding: 0 15px;
 	margin: 0 auto;
 }
-.container {}
+.container-2 {
+    max-width: 830px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
 
 .main-banner .container {
     display: flex;
@@ -492,6 +497,91 @@ a.news-block-item:hover .news-block-item-link {
     padding: 15px 25px 15px 49px;
     text-decoration: none;
     font-family: "Open Sans";
+}
+.page-object-block {
+    padding-top: 160px;
+}
+.page-object-block-header {
+    background-color: #fff;
+    padding: 45px 0;
+}
+.page-object-title{
+    background-image: url(../images/dots-black.png);
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+}
+.page-object-title h1 {
+    margin: 0;
+    font-size: 48px;
+    font-weight: 400;
+    color: #d35b54;
+    display: inline-block;
+    padding-right: 28px;
+    background-color: #fff;
+}
+.page-object-content {
+    background-color: #ededed;
+    padding: 50px 0;
+}
+.page-object-content .container-2>img {
+    margin-bottom: 25px;
+}
+.page-object-content h2 {
+    font-size: 30px;
+    font-weight: 400;
+    color: #2a2a2a;
+    font-style: italic;
+    margin: 0 0 25px 0;
+}
+.page-object-content p {
+    margin: 0 0 30px 0;
+    font-size: 16px;
+    color: #2a2a2a;
+    line-height: 1.5;
+}
+.page-object-content .video-block {
+    padding-bottom: 68.85%;
+    box-shadow: none;
+    border-radius: 0;
+}
+.places-nearby {
+    background-color: #ededed;
+}
+.places-nearby .container {
+    border-top: 1px solid #a5a6a7;
+    padding: 50px 0 45px;
+}
+
+.places-nearby-title{
+    background-image: url(../images/dots-black.png);
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+    margin-bottom: 35px;
+}
+.places-nearby-title span {
+    font-size: 30px;
+    color: #d35b54;
+    text-transform: uppercase;
+    padding-right: 35px;
+}
+.places-nearby .swiper-container {
+    padding: 0;
+}
+.places-nearby .swiper-slide-image {
+    box-shadow: none;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.places-nearby .swiper-button-next, .places-nearby .swiper-container-rtl .swiper-button-prev {
+    right: 24%;
+    left: auto;
+    width: 66px;
+    height: 66px;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 5px 13px rgba(0,0,0,0.75);
+    top: 90px;
 }
 @import 'pages/home';
 @import 'components/buttons';
