@@ -1,0 +1,35 @@
+{% include "partials/header.twig" %}
+<main class='main-content' id="app">
+	<div class="page-object-block">
+		<div class="container">
+			<div class="page-object-block-header">	
+	    			<div class="page-object-title"><h1>Все места</h1></div>
+    		</div>
+    		<div class="archive-objects-search">
+    				<div class="archive-objects-search-title">Поиск по всем местам</div>
+    				<form role="search" method="get" action="{{ site.link }}" class="searchform group">
+						<input required="required" type="text" name="s" id="s" placeholder="Поиск по сайту" class="search-text">
+						<input type="submit" value="Найти" class="search-button">
+					</form>
+    		</div>
+    	</div>
+    		<div class="archive-objects-content">
+    			<div class="container">
+	    			{% for item in 0..12 %}
+	    				<a href="" class="object-item">
+	    					<div class="object-item-image">
+							    <img src="./assets/images/place.jpg" alt="">
+							</div>
+							<div class="object-item-info">
+								<div class="object-item-info-name">ТЦ Никольский</div>
+								<div class="object-item-info-city">г. Орехово-Зуево</div>
+							</div>
+	    				</a>
+	    			{% endfor %}
+    			</div>
+    			<img class="loading-img" src="./assets/images/loading.png" alt="">
+    		</div>
+		
+	</div>
+</main>
+{% include "partials/footer.twig" %}
